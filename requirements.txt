@@ -1,3 +1,4 @@
+# Core dependencies
 aiohappyeyeballs==2.6.1
 aiohttp==3.13.2
 aiosignal==1.4.0
@@ -15,6 +16,8 @@ httpx-sse==0.4.3
 idna==3.11
 jsonpatch==1.33
 jsonpointer==3.0.0
+
+# LangChain dependencies
 langchain==1.2.0
 langchain-classic==1.0.0
 langchain-community==0.4.1
@@ -25,6 +28,8 @@ langgraph-checkpoint==3.0.1
 langgraph-prebuilt==1.0.5
 langgraph-sdk==0.3.0
 langsmith==0.5.0
+
+# Additional dependencies
 marshmallow==3.26.1
 multidict==6.7.0
 mypy_extensions==1.1.0
@@ -50,3 +55,7 @@ uuid_utils==0.12.0
 xxhash==3.6.0
 yarl==1.22.0
 zstandard==0.25.0
+
+# Multi-Agent Routing System specific dependencies
+openai>=1.0.0
+langchain-ollama>=0.1.0

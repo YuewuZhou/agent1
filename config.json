@@ -1,0 +1,53 @@
+{
+  "local_llm_config": {
+    "model_path": "qwen2.5:7b",
+    "base_url": "http://localhost:11434",
+    "max_context_length": 4096,
+    "temperature": 0.7,
+    "timeout_seconds": 30,
+    "memory_limit_mb": 8192,
+    "max_concurrent_requests": 5
+  },
+  "openai_config": {
+    "api_key": "",
+    "model_preferences": {
+      "simple": "gpt-3.5-turbo",
+      "complex": "gpt-4",
+      "code": "gpt-4"
+    },
+    "rate_limits": {
+      "requests_per_minute": 60,
+      "requests_per_hour": 3600,
+      "max_concurrent_requests": 10,
+      "backoff_base_delay": 1.0,
+      "backoff_max_delay": 60.0,
+      "max_retries": 3
+    },
+    "cost_limits": {
+      "daily_limit_usd": 10.0,
+      "monthly_limit_usd": 300.0,
+      "cost_per_token": 0.0001,
+      "alert_threshold_percent": 80.0
+    },
+    "timeout_seconds": 60,
+    "max_retries": 3
+  },
+  "routing_thresholds": {
+    "complexity_threshold": 0.7,
+    "confidence_threshold": 0.8,
+    "processing_time_threshold": 30.0,
+    "fallback_delay_seconds": 5.0
+  },
+  "logging_config": {
+    "level": 20,
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "file_path": "multi_agent_routing.log",
+    "max_file_size_mb": 100,
+    "backup_count": 5,
+    "enable_console": true,
+    "enable_file": true
+  },
+  "debug_mode": false,
+  "enable_fallback": true,
+  "metadata": {}
+}
